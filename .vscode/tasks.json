@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Qt PySide6 App",
+      "type": "shell",
+      "command": "cd d:\\Downloads\\qt_app_pyside\\khatam\\qt_app_pyside && python run_app.py",
+      "group": "test",
+      "isBackground": false,
+      "problemMatcher": []
+    }
+  ]
+}
