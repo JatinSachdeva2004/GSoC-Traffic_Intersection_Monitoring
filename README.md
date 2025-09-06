@@ -1,10 +1,23 @@
 # Smart Intersection Traffic Monitoring System
 
+## Quick Access
+- [Project Overview](#project-overview)
+- [Tech Stack](#tech-stack)
+- [Installation & Setup](#installation--setup)
+- [Configuration](#configuration)
+- [Usage Guide](#usage-guide)
+- [Building & Deployment](#building--deployment)
+- [Key Features](#key-features)
+- [Troubleshooting](#troubleshooting)
+- [License](#license)
+- [Contributors](#contributors)
+- [Acknowledgments](#acknowledgments)
+
 ##  Project Overview
 
 The **Smart Intersection Traffic Monitoring System** is an advanced AI-powered desktop application built with PySide6 and OpenVINO for real-time traffic monitoring, violation detection, and smart intersection analytics. The system combines computer vision, machine learning, and IoT technologies to provide comprehensive traffic management capabilities with enterprise-grade features.
 
-### Key Features
+### Features
 
 - **Real-time Object Detection**: YOLO11 (n/x) models with OpenVINO optimization for vehicles, pedestrians, and traffic lights
 - **Intelligent Violation Detection**: Red light violations, crosswalk violations, speed violations, and wrong-way detection
@@ -15,8 +28,6 @@ The **Smart Intersection Traffic Monitoring System** is an advanced AI-powered d
 - **Multi-Source Input**: Webcam, RTSP streams, video files, and drag-and-drop support
 - **Performance Monitoring**: FPS, latency, CPU/GPU/NPU utilization tracking with benchmark export
 - **Modern UI**: Dark/light themes, responsive design, and intuitive tabbed interface
-- **Cross-Platform**: Windows, macOS, and Linux support with PyInstaller packaging
-
 ---
 
 ##  Tech Stack
