@@ -1,11 +1,11 @@
 # Smart Intersection Traffic Monitoring System
 
 <p align="center">
-<img src="qt_app_pyside1/resources/splash.png" alt="Appp Logo" width="500" height="500"/>
+<img src="qt_app_pyside1/resources/splash.png" alt="App Logo" width="800"/>
 </p>
 <p align="center">
-  <img src="qt_app_pyside1/resources/gsoc.png" alt="GSoC Logo" width="400" height="400"/>
-  <img src="qt_app_pyside1/resources/openvino.png" alt="OpenVINO Logo" width="400" height="500"/>
+  <img src="qt_app_pyside1/resources/gsoc.png" alt="GSoC Logo" width="400" />
+  <img src="qt_app_pyside1/resources/openvino.png" alt="OpenVINO Logo" width="400" />
 </p>
 
 ## Quick Access
