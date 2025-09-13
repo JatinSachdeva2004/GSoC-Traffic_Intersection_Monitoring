@@ -1,6 +1,8 @@
 # Smart Intersection Traffic Monitoring System
 
-<img src="qt_app_pyside1/resources/splash.png" alt="Appp Logo" width="400" height="400"/>
+<p align="center">
+<img src="qt_app_pyside1/resources/splash.png" alt="Appp Logo" width="500" height="500"/>
+</p>
 <p align="center">
   <img src="qt_app_pyside1/resources/gsoc.png" alt="GSoC Logo" width="400" height="400"/>
   <img src="qt_app_pyside1/resources/openvino.png" alt="OpenVINO Logo" width="400" height="400"/>
@@ -43,12 +45,12 @@ The **Smart Intersection Traffic Monitoring System** is an advanced AI-powered d
 
 - **Real-time Object Detection**: YOLO11 (n/x) models with OpenVINO optimization for vehicles, pedestrians, and traffic lights
 - **Intelligent Violation Detection**: Red light violations, crosswalk violations, speed violations, and wrong-way detection
-- **Multi-Device Support**: CPU, GPU, NPU, and AUTO device selection with Intel Arc GPU optimization
+- **Multi-Device Support**: CPU, GPU, and AUTO device selection with Intel Arc GPU optimization
 - **Vision-Language Model (VLM)**: OpenVINO GenAI integration for scene understanding and natural language analysis
 - **Real-time Analytics**: Live dashboards with vehicle tracking, traffic patterns, and performance metrics
 - **IoT Integration**: MQTT + InfluxDB + Grafana for data streaming and visualization
 - **Multi-Source Input**: Webcam, RTSP streams, video files, and drag-and-drop support
-- **Performance Monitoring**: FPS, latency, CPU/GPU/NPU utilization tracking with benchmark export
+- **Performance Monitoring**: FPS, latency, CPU/GPU utilization tracking with benchmark export
 - **Modern UI**: Dark/light themes, responsive design, and intuitive tabbed interface
 
 ---
@@ -94,7 +96,7 @@ The **Smart Intersection Traffic Monitoring System** is an advanced AI-powered d
 
 #### Hardware Acceleration (Optional)
 
-- **Intel**: Intel Arc GPU, Intel NPU, or Intel integrated graphics
+- **Intel**: Intel Arc GPU, or Intel integrated graphics
 - **AMD**: ROCm-compatible GPU
 
 ### Quick Installation
@@ -205,7 +207,6 @@ The application automatically detects available devices:
 
 - **CPU**: Always available, good for compatibility
 - **GPU**: Intel Arc, NVIDIA, AMD (recommended for performance)
-- **NPU**: Intel NPU (best for efficiency)
 - **AUTO**: OpenVINO automatically selects optimal device
 
 ---
@@ -220,7 +221,7 @@ The application automatically detects available devices:
    - **RTSP Stream**: Enter stream URL (e.g., `rtsp://camera.ip/stream`)
    - **Video File**: Drag & drop or browse for video files
 3. **Configure Detection**:
-   - Choose device (CPU/GPU/NPU/AUTO)
+   - Choose device (CPU/GPU/AUTO)
    - Select model (YOLOv11n for speed, YOLOv11x for accuracy)
    - Adjust confidence and IoU thresholds
 4. **Enable Features**:
