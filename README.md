@@ -1,6 +1,13 @@
 # Smart Intersection Traffic Monitoring System
 
+<h1 align="center"> Smart Intersection Traffic Monitoring System</h1>
+<p align="center">
+  <img src="qt_app_pyside1/resources/gsoc.png" alt="GSoC Logo" width="100" height="100"/>
+  <img src="qt_app_pyside1/resources/openvino.png" alt="OpenVINO Logo" width="100" height="100"/>
+</p>
+
 ## Quick Access
+
 - [Project Overview](#project-overview)
 - [Tech Stack](#tech-stack)
 - [Installation & Setup](#installation--setup)
@@ -13,7 +20,24 @@
 - [Contributors](#contributors)
 - [Acknowledgments](#acknowledgments)
 
-##  Project Overview
+## Project Overview
+
+## 🚀 Project Demo
+
+<p align="center">
+  <img src="qt_app_pyside1/resources/dashboard.png" alt="Dashboard Screenshot" width="600"/>
+</p>
+
+<p align="center">
+  <img src="qt_app_pyside1/resources/vehicle_monitor.png" alt="Vehicle Monitoring" width="400"/>
+  <img src="qt_app_pyside1/resources/violation_monitor.png" alt="Violation Monitoring" width="400"/>
+</p>
+
+<p align="center">
+  <img src="qt_app_pyside1/resources/traffic_light.png" alt="Traffic Light Detection" width="300"/>
+</p>
+
+---
 
 The **Smart Intersection Traffic Monitoring System** is an advanced AI-powered desktop application built with PySide6 and OpenVINO for real-time traffic monitoring, violation detection, and smart intersection analytics. The system combines computer vision, machine learning, and IoT technologies to provide comprehensive traffic management capabilities with enterprise-grade features.
 
@@ -28,11 +52,13 @@ The **Smart Intersection Traffic Monitoring System** is an advanced AI-powered d
 - **Multi-Source Input**: Webcam, RTSP streams, video files, and drag-and-drop support
 - **Performance Monitoring**: FPS, latency, CPU/GPU/NPU utilization tracking with benchmark export
 - **Modern UI**: Dark/light themes, responsive design, and intuitive tabbed interface
+
 ---
 
-##  Tech Stack
+## Tech Stack
 
 ### Core Technologies
+
 - **Frontend**: PySide6 (Qt6) - Modern desktop GUI framework
 - **AI/ML Engine**: OpenVINO 2025.2+ - Intel's AI inference optimization toolkit
 - **Computer Vision**: OpenCV 4.11+ - Image and video processing
@@ -41,12 +67,14 @@ The **Smart Intersection Traffic Monitoring System** is an advanced AI-powered d
 - **VLM Integration**: OpenVINO GenAI - Vision-Language Model pipeline
 
 ### Data & Analytics
+
 - **Time-Series DB**: InfluxDB - Real-time metrics storage
 - **Message Broker**: MQTT (Mosquitto) - IoT data streaming
 - **Visualization**: Grafana - Real-time dashboards and alerts
 - **Data Export**: Pandas, CSV/JSON - Analytics and reporting
 
 ### Performance & Deployment
+
 - **Packaging**: PyInstaller - Cross-platform executable generation
 - **Containerization**: Docker + Docker Compose - Service orchestration
 - **Monitoring**: Performance overlay, benchmark logging
@@ -54,12 +82,12 @@ The **Smart Intersection Traffic Monitoring System** is an advanced AI-powered d
 
 ---
 
-
-##  Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 
 #### System Requirements
+
 - **OS**: Windows 10+, macOS 10.14+, or Ubuntu 18.04+
 - **Python**: 3.8 - 3.11 (recommended: 3.11)
 - **Memory**: Minimum 8GB RAM (16GB recommended for VLM)
@@ -67,12 +95,14 @@ The **Smart Intersection Traffic Monitoring System** is an advanced AI-powered d
 - **Storage**: 5GB free space for models and dependencies
 
 #### Hardware Acceleration (Optional)
+
 - **Intel**: Intel Arc GPU, Intel NPU, or Intel integrated graphics
 - **AMD**: ROCm-compatible GPU
 
 ### Quick Installation
 
 #### 1. Clone and Setup Environment
+
 ```bash
 # Clone the repository
 cd qt_app_pyside1
@@ -88,6 +118,7 @@ pip install -r requirements.txt
 ```
 
 #### 2. Download AI Models
+
 ```bash
 # YOLOv11 models will be downloaded automatically on first run
 # Or manually download:
@@ -99,6 +130,7 @@ python vlm_backend/model_downloader.py
 ```
 
 #### 3. Configure Services (Optional)
+
 ```bash
 # Start backend services
 docker-compose up -d
@@ -110,6 +142,7 @@ docker-compose up -d
 ```
 
 #### 4. Run Application
+
 ```bash
 # Standard mode
 python main.py
@@ -123,7 +156,7 @@ python main.py --debug
 
 ---
 
-##  Configuration
+## Configuration
 
 ### Core Configuration (`config.json`)
 
@@ -171,6 +204,7 @@ export OPENVINO_PRECISION="FP16"
 ### Device Configuration
 
 The application automatically detects available devices:
+
 - **CPU**: Always available, good for compatibility
 - **GPU**: Intel Arc, NVIDIA, AMD (recommended for performance)
 - **NPU**: Intel NPU (best for efficiency)
@@ -178,24 +212,24 @@ The application automatically detects available devices:
 
 ---
 
-##  Usage Guide
+## Usage Guide
 
 ### 1. Live Video Monitoring
 
 1. **Launch Application**: Run `python main.py`
 2. **Select Input Source**:
-   -  **Webcam**: Select camera index (0, 1, 2...)
-   -  **RTSP Stream**: Enter stream URL (e.g., `rtsp://camera.ip/stream`)
-   -  **Video File**: Drag & drop or browse for video files
+   - **Webcam**: Select camera index (0, 1, 2...)
+   - **RTSP Stream**: Enter stream URL (e.g., `rtsp://camera.ip/stream`)
+   - **Video File**: Drag & drop or browse for video files
 3. **Configure Detection**:
    - Choose device (CPU/GPU/NPU/AUTO)
    - Select model (YOLOv11n for speed, YOLOv11x for accuracy)
    - Adjust confidence and IoU thresholds
 4. **Enable Features**:
-   -  Red light violation detection
-   -  Crosswalk monitoring
-   -  Vehicle tracking
-   -  Performance overlay
+   - Red light violation detection
+   - Crosswalk monitoring
+   - Vehicle tracking
+   - Performance overlay
 
 ### 2. Analytics & Reporting
 
@@ -226,7 +260,7 @@ python plot_benchmarks.py
 
 ---
 
-##  Building & Deployment
+## Building & Deployment
 
 ### Cross-Platform Executable
 
@@ -261,43 +295,44 @@ install_trafficmonitor_windows.bat
 
 ---
 
-##  Key Features
+## Key Features
 
 ### 1. AI-Powered Detection
+
 - **YOLO11 Models**: Latest Ultralytics models optimized for traffic scenarios
 - **OpenVINO Acceleration**: Intel hardware optimization for maximum performance
 - **Multi-Class Detection**: Vehicles, pedestrians, cyclists, traffic lights
 - **Real-time Tracking**: ByteTrack algorithm for persistent object tracking
 
 ### 2. Smart Violation Detection
+
 - **Red Light Violations**: Advanced traffic light state detection with grace periods
 - **Crosswalk Monitoring**: Pedestrian safety with violation line detection
 - **Speed Analysis**: Vehicle speed estimation and violation alerts
 - **Wrong-Way Detection**: Advanced traffic flow analysis
 
 ### 3. Vision-Language Integration
+
 - **Scene Understanding**: Natural language descriptions of traffic scenes
 - **Incident Analysis**: AI-generated reports for violations and anomalies
 - **Interactive Queries**: Ask questions about traffic situations
 - **Automated Reporting**: Generate detailed incident reports
 
 ### 4. Enterprise Integration
+
 - **MQTT Streaming**: Real-time data for traffic management systems
 - **InfluxDB Storage**: Scalable time-series data storage
 - **Grafana Dashboards**: Professional monitoring and alerting
 - **REST API**: Programmatic access to detection and analytics
 
 ### 5. Performance Optimization
+
 - **Multi-Device Support**: Automatic selection of optimal processing device
 - **Model Quantization**: FP32, FP16, INT8 support for efficiency
 - **Asynchronous Processing**: Non-blocking UI with threaded processing
 - **Memory Management**: Efficient handling of video streams and models
 
 ---
-
-
-
-
 
 ### Adding Features
 
@@ -316,11 +351,12 @@ def analyze_custom_scene(self, frame, prompt):
 
 ---
 
-##  Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
 #### 1. Model Loading Errors
+
 ```bash
 # Download models manually
 wget https://github.com/ultralytics/assets/releases/download/v0.0.0/yolo11n.pt
@@ -328,6 +364,7 @@ python convert_model.py yolo11n.pt
 ```
 
 #### 2. OpenVINO Device Issues
+
 ```bash
 # Check available devices
 python -c "import openvino as ov; print(ov.Core().available_devices)"
@@ -337,6 +374,7 @@ rm -rf ~/.cache/openvino
 ```
 
 #### 3. Service Connection Issues
+
 ```bash
 # Check service status
 docker-compose ps
@@ -346,6 +384,7 @@ docker-compose restart
 ```
 
 #### 4. Performance Issues
+
 - **Low FPS**: Switch to faster model (YOLOv11n) or reduce resolution
 - **High Memory**: Reduce `max_history_frames` in config
 - **GPU Issues**: Update drivers and check OpenVINO device support
@@ -362,22 +401,25 @@ python main.py --profile --benchmark
 
 ---
 
-##  License
+## License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
 ---
-##  Contributors
+
+## Contributors
+
 - **Lead:** Jatin Sachdeva
 - **Mentors:** Hassnaa Moustafa, Zhuo Wu, Vibhu Bithar
-##  Acknowledgments
+
+## Acknowledgments
 
 - **Intel OpenVINO**: AI acceleration and optimization framework
 - **Ultralytics**: YOLO11 object detection models
 - **Qt/PySide6**: Cross-platform GUI framework
 - **OpenCV**: Computer vision library
 - **InfluxDB & Grafana**: Time-series data platform
+
 ---
 
-
-*Built with ❤️ for intelligent traffic management and smart city applications.*
+_Built with ❤️ for intelligent traffic management and smart city applications._
