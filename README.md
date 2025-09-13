@@ -5,7 +5,7 @@
 </p>
 <p align="center">
   <img src="qt_app_pyside1/resources/gsoc.png" alt="GSoC Logo" width="400" height="400"/>
-  <img src="qt_app_pyside1/resources/openvino.png" alt="OpenVINO Logo" width="400" height="400"/>
+  <img src="qt_app_pyside1/resources/openvino.png" alt="OpenVINO Logo" width="400" height="500"/>
 </p>
 
 ## Quick Access
@@ -25,7 +25,7 @@
 ## Project Overview
 
 <p align="center">
-  <img src="qt_app_pyside1/resources/dashboard.png" alt="Dashboard Screenshot" width="600"/>
+  <img src="qt_app_pyside1/resources/dashboard.png" alt="Dashboard Screenshot" width="1000"/>
 </p>
 
 <p align="center">
